@@ -1,5 +1,13 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+{{#card-item as |card|}}
+  {{#card.image}}
+    <img src="https://via.placeholder.com/250x100">
+  {{/card.image}}
+  
+  {{#card.title}}
+    <h3>Using hash helper</h3>
+  {{/card.title}}
 
-{{outlet}}
+  {{#card.description}}
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente expedita suscipit quisquam inventore dolorem!</p>
+  {{/card.description}}
+{{/card-item}}
